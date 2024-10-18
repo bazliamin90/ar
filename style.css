@@ -1,0 +1,33 @@
+@font-face { font-family: opendyslexic-bold; src: url('font/OpenDyslexic-Bold.otf'); }
+@font-face { font-family: opendyslexic-reg; src: url('font/OpenDyslexic-Regular.otf'); }
+@font-face { font-family: opendyslexic-ita; src: url('font/OpenDyslexic-Italic.otf'); }
+@font-face { font-family: ut; src: url('font/JawiUthmanTaha.ttf'); }
+@font-face { font-family: lateef; src: url('font/Lateef.ttf'); }
+@font-face { font-family: amiri; src: url('font/AmiriQuran-Regular.ttf'); }
+
+body {
+    font-family: opendyslexic-reg;
+    margin: 20px;
+    }
+    
+.arab {
+    direction: rtl;
+    font-family: ut;
+    font-size: 22px;
+    }
+	
+.qur {
+    direction: rtl;
+    font-family: amiri;
+    font-size: 22px;
+    }
+	
+.h1a {
+	direction: rtl;
+	font-family: lateef;
+	font-size: 32px;
+	}
+	
+.n {
+	font-size: 12px;
+}
