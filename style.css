@@ -5,10 +5,23 @@
 @font-face { font-family: lateef; src: url('font/Lateef.ttf'); }
 @font-face { font-family: amiri; src: url('font/AmiriQuran-Regular.ttf'); }
 
+header {
+    background-color: #ebffe3;
+	padding: 0 20px;
+	margin-bottom: 40px;
+	}
+
 body {
     font-family: opendyslexic-reg;
-    margin: 20px;
+    margin: 0;
+	color: #555;
     }
+	
+main {
+	margin: 0px auto;
+	max-width: 50rem;
+	width: 90%;
+	}
     
 .arab {
     direction: rtl;
@@ -20,6 +33,7 @@ body {
     direction: rtl;
     font-family: amiri;
     font-size: 22px;
+	text-align: center;
     }
 	
 .h1a {
@@ -27,7 +41,95 @@ body {
 	font-family: lateef;
 	font-size: 32px;
 	}
+
+h1 {
+	font-size: 17px;
+	}
 	
 .n {
 	font-size: 12px;
+	}
+
+.jp {
+	font-size: 15px;
+	background-color: #f5eeff;
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+
+.ch {
+	text-align: center;
+	}
+	
+.ch a {
+	font-size: 12px;
+	background-color: lightyellow;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px;
+	}
+	
+footer {
+    margin-top: 60px;
+	text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #ebffe3;
+    padding: 5px 0;  /* Adjust padding for height slightly more than the font size */
+	}
+
+footer p {
+    font-size: 8px;
+    margin: 0;  /* Ensure there's no additional margin */
+    padding-left: 5px;
+    padding-right: 5px;
+	}
+	
+.social-icons {
+    display: inline-block;  /* Ensure the icons are in-line with the text */
 }
+
+.social-icons a {
+    margin-left: 10px;
+    margin-right: 10px;
+	text-decoration: none;
+}
+
+.social-icons img {
+    width: 16px;  /* Adjust the size of the icons as needed */
+    height: 16px;
+    vertical-align: middle;  /* Align the icons properly with the text */
+}
+
+ol {
+	margin-left: 0;  /* Remove extra left margin */
+	padding-left: 20px;  /* Adjust this value to control the distance from the left edge */
+	}
+
+ol ::marker {
+	color: blue;
+	font-weight: bold;
+	font-size: 12px;
+	}
+	
+.stt {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 9;
+	width: 15px;
+	height: 22px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #ffd9d9;
+	color: grey;
+	text-decoration: none;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	}
+
+.stt:active {
+	color: white;
+	background-color: black;
+	}
