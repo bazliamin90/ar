@@ -31,12 +31,41 @@ headerTemplate.innerHTML = `
 		background-color: black;
 		color: white;
 	}
+
+	.ct {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	select {
+		border: 1px solid lightgrey;
+		border-radius: 4px;
+		font-family: opendyslexic-reg;
+		font-size: 10px;
+		outline: none; /* Removes the default outline when clicked */
+	}
+
+	select:focus {
+		outline: none; /* Ensures no outline appears on focus */
+	}
   </style>
 
-
+  <!--
   <header>
     <a href="index.html" class="home">T o p i c s</a>
   </header>
+  -->
+  
+  <div class="ct">
+  <select onchange="location = this.value;">
+    <option value="">Select Page</option>
+    <option value="index.html">1 - Chapter 1</option>
+    <option value="002.html">2 - Chapter 2</option>
+  </select>
+  </div>
+
 `;
 
 class Header extends HTMLElement {
