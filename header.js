@@ -63,6 +63,7 @@ headerTemplate.innerHTML = `
     <option value="">Select Page</option>
     <option value="index.html">1 - Chapter 1</option>
     <option value="002.html">2 - Chapter 2</option>
+	<option value="003.html">3 - Chapter 2</option>
   </select>
   </div>
 
