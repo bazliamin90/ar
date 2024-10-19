@@ -26,7 +26,11 @@
 	<p class="arab">سلامت داتڠ کلامن اين .</p>
 -->
 	
-	<a class="pg">Page 3</a>
+	<div class="centbut">
+		<a class="pg">Page 3</a>
+		<a id="prevBtn">Previous</a>
+		<a id="nextBtn">Next</a>
+	</div>
 	
 	<div class="ch">
 		<a>Chapter 2. Al-Baqarah</a>
@@ -83,6 +87,15 @@
 <a href='#' class="stt">↑</a>	
 </main>
 
+<!--
+	<ol>
+		<li>
+		<p class="qur"></p>
+		<p class="jp"></p>
+		<p class="n"></p>
+	</ol>
+-->
+
 <footer>
     <p>All praises to Allah.</p>
     <div class="social-icons">
@@ -100,13 +113,62 @@
 
 
 </body>
-</html>
 
-<!--
-	<ol>
-		<li>
-		<p class="qur"></p>
-		<p class="jp"></p>
-		<p class="n"></p>
-	</ol>
--->
+<script>
+    // Function to calculate the next page
+    function goToNextPage() {
+        // Get the current page's URL
+        const currentUrl = window.location.pathname;
+        
+        // Use a regular expression to find the current page number (assumes URL is like "002.html")
+        const pagePattern = /(\d+)\.html/;
+        const match = currentUrl.match(pagePattern);
+        
+        if (match) {
+            // Extract the current page number
+            const currentPage = parseInt(match[1]);
+            
+            // Increment the page number
+            const nextPage = currentPage + 1;
+            
+            // Create the new URL for the next page (e.g., "003.html")
+            const nextUrl = currentUrl.replace(pagePattern, nextPage.toString().padStart(3, '0') + '.html');
+            
+            // Redirect to the next page
+            window.location.href = nextUrl;
+        }
+    }
+
+    // Attach the event listener to the Next button
+    document.getElementById('nextBtn').addEventListener('click', goToNextPage);
+	
+	
+	// Function to calculate the previous page
+    function goToPrevPage() {
+        // Get the current page's URL
+        const currentUrl = window.location.pathname;
+        
+        // Use a regular expression to find the current page number (assumes URL is like "002.html")
+        const pagePattern = /(\d+)\.html/;
+        const match = currentUrl.match(pagePattern);
+        
+        if (match) {
+            // Extract the current page number
+            const currentPage = parseInt(match[1]);
+            
+            // Decrement the page number
+            const nextPage = currentPage - 1;
+            
+            // Create the new URL for the next page (e.g., "003.html")
+            const nextUrl = currentUrl.replace(pagePattern, nextPage.toString().padStart(3, '0') + '.html');
+            
+            // Redirect to the next page
+            window.location.href = nextUrl;
+        }
+    }
+
+    // Attach the event listener to the Previous button
+    document.getElementById('prevBtn').addEventListener('click', goToPrevPage);
+</script>
+
+</html>

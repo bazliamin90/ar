@@ -37,6 +37,7 @@ headerTemplate.innerHTML = `
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: 20px;
 	}
 	
 	select {
@@ -44,6 +45,7 @@ headerTemplate.innerHTML = `
 		border-radius: 4px;
 		font-family: opendyslexic-reg;
 		font-size: 10px;
+		color: #555;
 		outline: none; /* Removes the default outline when clicked */
 	}
 

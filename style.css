@@ -94,22 +94,33 @@ footer p {
     padding-left: 5px;
     padding-right: 5px;
 	}
+
+.centbut {
+    display: flex;
+	justify-content: center; /* Centers the divs horizontally */
+	align-items: center;     /* Centers the divs vertically */
+	}
+
+.centbut a {
+	margin-left: 5px;
+    margin-right: 5px;
+	}
 	
 .social-icons {
     display: inline-block;  /* Ensure the icons are in-line with the text */
-}
+	}
 
 .social-icons a {
     margin-left: 10px;
     margin-right: 10px;
 	text-decoration: none;
-}
+	}
 
 .social-icons img {
     width: 16px;  /* Adjust the size of the icons as needed */
     height: 16px;
     vertical-align: middle;  /* Align the icons properly with the text */
-}
+	}
 
 ol {
 	margin-left: 0;  /* Remove extra left margin */
@@ -141,4 +152,31 @@ ol ::marker {
 .stt:active {
 	color: white;
 	background-color: black;
+	}
+	
+.xout {
+	color: #555;
+	}	
+	
+#nextBtn {
+	border: 1px solid lightgrey;
+	font-size: 10px;
+	cursor: pointer;
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #ebffe3;
+	}
+
+#prevBtn {
+	border: 1px solid lightgrey;
+	font-size: 10px;
+	cursor: pointer;
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	background-color: #ebffe3;
 	}
