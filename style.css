@@ -204,6 +204,23 @@ ol ::marker {
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	}
+
+#searchBox {
+	margin-top: 20px;
+	font-family: opendyslexic-reg;
+	font-size: 10px;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	}
+	
+a.isi{
+	text-decoration: underline lightgrey dotted;
+	text-underline-offset: 5px;
+	font-family: opendyslexic-reg;
+	color: #555;
+	font-size: 12px;
+	}
 	
 @media (max-width: 500px) {			
 		.next {
