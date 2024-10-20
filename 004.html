@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran - Jp</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="header.js"></script>
+</head>
+
+<body>
+
+<header>
+	<h1>Quran - Jp</h1>
+	<p class="n">A translation of the Holy Quran.</p>
+</header>
+
+<header-component></header-component>
+
+<main>
+	
+	<div class="centbut">
+		<a class="pg">Page 4</a>
+	</div>
+	
+	<a id="prevBtn" class="prev"><</a>
+	<a id="nextBtn" class="next">></a>
+	
+	<div class="ch">
+		<a>Chapter 2. Al-Baqarah</a>
+		<br><a class="jp">雌牛章〔アル・バカラ〕</a>
+	</div>
+	
+	<ol start="17">
+		<li>
+		<p class="qur">مَثَلُهُمْ كَمَثَلِ ٱلَّذِى ٱسْتَوْقَدَ نَارًا فَلَمَّآ أَضَآءَتْ مَا حَوْلَهُۥ ذَهَبَ ٱللَّهُ بِنُورِهِمْ وَتَرَكَهُمْ فِى ظُلُمَـٰتٍ لَّا يُبْصِرُونَ</p>
+		<p class="jp">かれらを譬えれば火を灯す者のようで，折角火が辺りを照らしたのに，アッラーはかれらの光を取り上げられ，暗闇の中に取り残されたので，何二つ見ることが出来ない。</p>
+		<p class="n">Their example is that of someone who kindles a fire, but when it lights up all around them, Allah takes away their light, leaving them in complete darkness—unable to see.</p>
+	</ol>
+	
+<a href='#' class="stt">↑</a>	
+</main>
+
+<!--
+	<ol>
+		<li>
+		<p class="qur"></p>
+		<p class="jp"></p>
+		<p class="n"></p>
+	</ol>
+-->
+
+<footer>
+    <p>All praises to Allah.</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/baz.li3" target="_blank">
+            <img src="fb.svg" alt="Facebook">
+        </a>
+        <a href="https://t.me/bazliamin" target="_blank">
+            <img src="tg.svg" alt="Telegram">
+        </a>
+		<a href="https://www.instagram.com/bazliamin/" target="_blank">
+            <img src="ig.svg" alt="Telegram">
+        </a>
+    </div>
+</footer>
+
+
+</body>
+
+<script>
+    // Function to calculate the next page
+    function goToNextPage() {
+        // Get the current page's URL
+        const currentUrl = window.location.pathname;
+        
+        // Use a regular expression to find the current page number (assumes URL is like "002.html")
+        const pagePattern = /(\d+)\.html/;
+        const match = currentUrl.match(pagePattern);
+        
+        if (match) {
+            // Extract the current page number
+            const currentPage = parseInt(match[1]);
+            
+            // Increment the page number
+            const nextPage = currentPage + 1;
+            
+            // Create the new URL for the next page (e.g., "003.html")
+            const nextUrl = currentUrl.replace(pagePattern, nextPage.toString().padStart(3, '0') + '.html');
+            
+            // Redirect to the next page
+            window.location.href = nextUrl;
+        }
+    }
+
+    // Attach the event listener to the Next button
+    document.getElementById('nextBtn').addEventListener('click', goToNextPage);
+	
+	
+	// Function to calculate the previous page
+    function goToPrevPage() {
+        // Get the current page's URL
+        const currentUrl = window.location.pathname;
+        
+        // Use a regular expression to find the current page number (assumes URL is like "002.html")
+        const pagePattern = /(\d+)\.html/;
+        const match = currentUrl.match(pagePattern);
+        
+        if (match) {
+            // Extract the current page number
+            const currentPage = parseInt(match[1]);
+            
+            // Decrement the page number
+            const nextPage = currentPage - 1;
+            
+            // Create the new URL for the next page (e.g., "003.html")
+            const nextUrl = currentUrl.replace(pagePattern, nextPage.toString().padStart(3, '0') + '.html');
+            
+            // Redirect to the next page
+            window.location.href = nextUrl;
+        }
+    }
+
+    // Attach the event listener to the Previous button
+    document.getElementById('prevBtn').addEventListener('click', goToPrevPage);
+</script>
+
+</html>

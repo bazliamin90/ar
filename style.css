@@ -139,7 +139,7 @@ ol ::marker {
 	right: 10px;
 	z-index: 9;
 	width: 15px;
-	height: 22px;
+	padding: 1px 1px;
 	font-size: 12px;
 	text-align: center;
 	background-color: #ffd9d9;
@@ -160,10 +160,12 @@ ol ::marker {
 	
 #nextBtn {
 	border: 1px solid lightgrey;
+	border-right: none;
+	color: red;
 	font-size: 10px;
 	cursor: pointer;
 	display: inline-block;
-	width: 20px;
+	width: 30px;
 	padding: 5px 0;
 	text-align: center;
 	text-decoration: none;
@@ -172,10 +174,12 @@ ol ::marker {
 
 #prevBtn {
 	border: 1px solid lightgrey;
+	border-left: none;
+	color: red;
 	font-size: 10px;
 	cursor: pointer;
 	display: inline-block;
-	width: 20px;
+	width: 30px;
 	padding: 5px 0;
 	text-align: center;
 	text-decoration: none;
@@ -188,8 +192,8 @@ ol ::marker {
 	bottom: 50%;
 	right: 5px;
 	z-index: 9;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
 	}
 
 .prev {
@@ -197,6 +201,15 @@ ol ::marker {
 	bottom: 50%;
 	left: 5px;
 	z-index: 9;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
 	}
+	
+@media (max-width: 500px) {			
+		.next {
+			right: 0;
+		}
+		.prev {
+			left: 0;
+		}	
+    }
