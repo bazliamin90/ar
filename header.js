@@ -62,6 +62,7 @@ headerTemplate.innerHTML = `
 	<option value="003.html">3</option>
 	<option value="004.html">4</option>
 	<option value="005.html">5</option>
+	<option value="006.html">6</option>
   </select>
   </div>
 
