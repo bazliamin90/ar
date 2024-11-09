@@ -1,8 +1,7 @@
 @font-face { font-family: opendyslexic-bold; src: url('font/OpenDyslexic-Bold.otf'); }
 @font-face { font-family: opendyslexic-reg; src: url('font/OpenDyslexic-Regular.otf'); }
 @font-face { font-family: opendyslexic-ita; src: url('font/OpenDyslexic-Italic.otf'); }
-@font-face { font-family: ut; src: url('font/JawiUthmanTaha.ttf'); }
-@font-face { font-family: lateef; src: url('font/Lateef.ttf'); }
+@font-face { font-family: hafs; src: url('font/hafs.ttf'); }
 @font-face { font-family: amiri; src: url('font/AmiriQuran-Regular.ttf'); }
 
 header {
@@ -33,7 +32,7 @@ main {
 	
 .qur {
     direction: rtl;
-    font-family: amiri;
+    font-family: hafs;
     font-size: 22px;
 	text-align: center;
     }
